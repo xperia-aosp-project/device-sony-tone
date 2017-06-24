@@ -15,7 +15,7 @@
 # Platform path
 PLATFORM_COMMON_PATH := device/sony/tone
 
-$(call inherit-product, device/sony/common/common.mk)
+$(call inherit-product, device/sony/common/common_omni.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 
@@ -147,3 +147,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qti.sensors.pug=false \
     ro.qti.sensors.iod=false \
     ro.qfusion_use_report_period=false
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.HAL3.enabled=1

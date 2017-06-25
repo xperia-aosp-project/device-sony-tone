@@ -17,7 +17,7 @@
 WITH_DEXPREOPT := false
 
 # Kernel headers
-PRODUCT_VENDOR_KERNEL_HEADERS := device/sony/tone/kernel-headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/sony/common-headers/kernel-headers
 
 # Upstream config
 include device/sony/tone/PlatformConfig.mk
